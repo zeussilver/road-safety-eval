@@ -1,0 +1,13 @@
+duckdb==1.5.6
+folium==0.20.0
+geopandas==1.2.0
+matplotlib==3.11.2
+numpy==2.5.4
+pandas==3.0.6
+pyarrow==26.0.0
+pyogrio==0.13.0
+pyproj==3.8.0
+pytest==9.1.1
+scipy==1.18.1
+shapely==2.2.0
+statsmodels==0.15.0

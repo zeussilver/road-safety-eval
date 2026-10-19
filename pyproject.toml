@@ -1,0 +1,15 @@
+[project]
+name = "rse"
+version = "0.1.0"
+description = "Before-after evaluation of Victorian speed-limit reductions with a comparison group"
+requires-python = ">=3.12"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

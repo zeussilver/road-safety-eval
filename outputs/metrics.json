@@ -1,0 +1,1463 @@
+{
+  "evaluate": {
+    "by_type": {
+      "50\u219240": {
+        "cells": {
+          "hi": 1.384082106657931,
+          "lo": 0.6784871807166811,
+          "pct_change": -3.0937583833350657,
+          "rr": 0.9690624161666493,
+          "se_log_model_based": 0.18187244115340573
+        },
+        "did": {
+          "clusters": {
+            "assignment": 64,
+            "lga": 46,
+            "unit": 1029
+          },
+          "comparison_after": 785,
+          "comparison_before": 1852,
+          "comparison_units": 10881,
+          "hi": 1.358048642612921,
+          "lo": 0.6914936158840258,
+          "p": 0.8551784391460007,
+          "pct_change": -3.0937583833320903,
+          "rr": 0.9690624161666791,
+          "se_by_clustering": {
+            "assignment": 0.06564687981028647,
+            "lga": 0.09375896132800728,
+            "unit": 0.1721843380769694
+          },
+          "se_log": 0.1721843380769694,
+          "strata_used": 17,
+          "treated_after": 52,
+          "treated_before": 116,
+          "treated_km": 109.89874334993463,
+          "treated_units": 341
+        },
+        "eb": {
+          "expected_after": 43.60398837138218,
+          "hi": 1.5555776289419416,
+          "lo": 0.8138437171020758,
+          "observed_after": 52,
+          "pct_change": 18.471067302200872,
+          "rr": 1.1847106730220087
+        },
+        "naive": {
+          "clusters": {
+            "assignment": 18,
+            "lga": 10,
+            "unit": 78
+          },
+          "comparison_after": 0,
+          "comparison_before": 0,
+          "comparison_units": 0,
+          "hi": 1.239439421685953,
+          "lo": 0.6668612854192172,
+          "p": 0.5468933306551986,
+          "pct_change": -9.086075546990834,
+          "rr": 0.9091392445300917,
+          "se_by_clustering": {
+            "assignment": 0.0789729689941849,
+            "lga": 0.10148391689123683,
+            "unit": 0.15812341979108765
+          },
+          "se_log": 0.15812341979108765,
+          "treated_after": 52,
+          "treated_before": 116,
+          "treated_km": 120.45371624157175,
+          "treated_units": 396
+        },
+        "placebo_did": {
+          "clusters": {
+            "assignment": 68,
+            "lga": 49,
+            "unit": 1461
+          },
+          "comparison_after": 1863,
+          "comparison_before": 1860,
+          "comparison_units": 17025,
+          "hi": 1.4976106134207081,
+          "lo": 0.7397305177594362,
+          "p": 0.7759901564378276,
+          "pct_change": 5.2534215343010615,
+          "rr": 1.0525342153430106,
+          "se_by_clustering": {
+            "assignment": 0.17993703914131234,
+            "lga": 0.09269783805375857,
+            "unit": 0.1623826470706998
+          },
+          "se_log": 0.17993703914131234,
+          "strata_used": 18,
+          "treated_after": 105,
+          "treated_before": 106,
+          "treated_km": 110.33395334342211,
+          "treated_units": 338
+        },
+        "trend": {
+          "clusters": {
+            "assignment": 51,
+            "lga": 51,
+            "unit": 2334
+          },
+          "hi": 1.0619048894409495,
+          "lo": 0.9018679598757737,
+          "p": 0.604035331400723,
+          "pct_change": -2.1379544347136514,
+          "rr": 0.9786204556528635,
+          "se_by_clustering": {
+            "assignment": 0.04167207061609377,
+            "lga": 0.04167207061609377,
+            "unit": 0.03890591216317432
+          },
+          "se_log": 0.04167207061609377
+        }
+      },
+      "60\u219240/50": {
+        "cells": {
+          "hi": 1.0407443440731123,
+          "lo": 0.42738389771077606,
+          "pct_change": -33.306868847653305,
+          "rr": 0.666931311523467,
+          "se_log_model_based": 0.22704722749992573
+        },
+        "did": {
+          "clusters": {
+            "assignment": 43,
+            "lga": 18,
+            "unit": 1501
+          },
+          "comparison_after": 1297,
+          "comparison_before": 3246,
+          "comparison_units": 3961,
+          "hi": 1.0159577031471863,
+          "lo": 0.4378109176319015,
+          "p": 0.05926235474189983,
+          "pct_change": -33.30686884767903,
+          "rr": 0.6669313115232097,
+          "se_by_clustering": {
+            "assignment": 0.19049850316309816,
+            "lga": 0.21474881024502457,
+            "unit": 0.20217041429812385
+          },
+          "se_log": 0.21474881024502457,
+          "strata_used": 22,
+          "treated_after": 27,
+          "treated_before": 100,
+          "treated_km": 51.20376331707205,
+          "treated_units": 135
+        },
+        "eb": {
+          "expected_after": 45.106720169421834,
+          "hi": 0.8351642123200995,
+          "lo": 0.3550861849904645,
+          "observed_after": 27,
+          "pct_change": -40.487480134471795,
+          "rr": 0.595125198655282
+        },
+        "naive": {
+          "clusters": {
+            "assignment": 25,
+            "lga": 18,
+            "unit": 50
+          },
+          "comparison_after": 0,
+          "comparison_before": 0,
+          "comparison_units": 0,
+          "hi": 0.9717689596224431,
+          "lo": 0.43431213972476584,
+          "p": 0.035785992986390354,
+          "pct_change": -35.034543319412215,
+          "rr": 0.6496545668058779,
+          "se_by_clustering": {
+            "assignment": 0.1867126341292129,
+            "lga": 0.2054513727804139,
+            "unit": 0.19134772639851658
+          },
+          "se_log": 0.2054513727804139,
+          "treated_after": 27,
+          "treated_before": 100,
+          "treated_km": 77.21741266003612,
+          "treated_units": 208
+        },
+        "placebo_did": {
+          "clusters": {
+            "assignment": 48,
+            "lga": 20,
+            "unit": 1594
+          },
+          "comparison_after": 2935,
+          "comparison_before": 2697,
+          "comparison_units": 4040,
+          "hi": 1.4472896422591908,
+          "lo": 0.7471141991954248,
+          "p": 0.8168006871927168,
+          "pct_change": 3.9851259594519073,
+          "rr": 1.039851259594519,
+          "se_by_clustering": {
+            "assignment": 0.1561832399684976,
+            "lga": 0.16868417569703814,
+            "unit": 0.14421065362966562
+          },
+          "se_log": 0.16868417569703814,
+          "strata_used": 24,
+          "treated_after": 94,
+          "treated_before": 89,
+          "treated_km": 53.90683592397678,
+          "treated_units": 142
+        },
+        "trend": {
+          "clusters": {
+            "assignment": 26,
+            "lga": 26,
+            "unit": 1811
+          },
+          "hi": 1.009555024228256,
+          "lo": 0.8485747477812008,
+          "p": 0.08092125222573449,
+          "pct_change": -7.442833877881916,
+          "rr": 0.9255716612211808,
+          "se_by_clustering": {
+            "assignment": 0.04431376491210253,
+            "lga": 0.04431376491210253,
+            "unit": 0.033112533301973335
+          },
+          "se_log": 0.04431376491210253
+        }
+      },
+      "70/80\u2192lower": {
+        "cells": {
+          "hi": 1.137993276436441,
+          "lo": 0.6616116121533814,
+          "pct_change": -13.229638341031313,
+          "rr": 0.8677036165896869,
+          "se_log_model_based": 0.13835535021635176
+        },
+        "did": {
+          "clusters": {
+            "assignment": 96,
+            "lga": 54,
+            "unit": 3682
+          },
+          "comparison_after": 5032,
+          "comparison_before": 11433,
+          "comparison_units": 9671,
+          "hi": 1.2433150824089576,
+          "lo": 0.6055661810069247,
+          "p": 0.43937217167402576,
+          "pct_change": -13.22963834103823,
+          "rr": 0.8677036165896177,
+          "se_by_clustering": {
+            "assignment": 0.14113730968893354,
+            "lga": 0.18351681154610372,
+            "unit": 0.16526196479870955
+          },
+          "se_log": 0.18351681154610372,
+          "strata_used": 43,
+          "treated_after": 84,
+          "treated_before": 209,
+          "treated_km": 137.81037476131675,
+          "treated_units": 266
+        },
+        "eb": {
+          "expected_after": 86.65759696780857,
+          "hi": 1.2000259361008125,
+          "lo": 0.7319036024668775,
+          "observed_after": 84,
+          "pct_change": -3.4035230716154996,
+          "rr": 0.965964769283845
+        },
+        "naive": {
+          "clusters": {
+            "assignment": 43,
+            "lga": 23,
+            "unit": 112
+          },
+          "comparison_after": 0,
+          "comparison_before": 0,
+          "comparison_units": 0,
+          "hi": 1.357144462391496,
+          "lo": 0.5701835607857939,
+          "p": 0.5622271626224977,
+          "pct_change": -12.032877615150717,
+          "rr": 0.8796712238484928,
+          "se_by_clustering": {
+            "assignment": 0.18135893335606715,
+            "lga": 0.22122339132124827,
+            "unit": 0.17518320979122415
+          },
+          "se_log": 0.22122339132124827,
+          "treated_after": 84,
+          "treated_before": 209,
+          "treated_km": 184.14291566453772,
+          "treated_units": 366
+        },
+        "placebo_did": {
+          "clusters": {
+            "assignment": 97,
+            "lga": 55,
+            "unit": 4116
+          },
+          "comparison_after": 14378,
+          "comparison_before": 13739,
+          "comparison_units": 10052,
+          "hi": 1.3847429493638088,
+          "lo": 0.8233662757148794,
+          "p": 0.6209604271768889,
+          "pct_change": 6.777836887629318,
+          "rr": 1.0677783688762932,
+          "se_by_clustering": {
+            "assignment": 0.08012860707186384,
+            "lga": 0.1326219905380674,
+            "unit": 0.11171387665790247
+          },
+          "se_log": 0.1326219905380674,
+          "strata_used": 43,
+          "treated_after": 196,
+          "treated_before": 174,
+          "treated_km": 133.37060395402312,
+          "treated_units": 256
+        },
+        "trend": {
+          "clusters": {
+            "assignment": 62,
+            "lga": 62,
+            "unit": 3799
+          },
+          "hi": 1.0070265915880752,
+          "lo": 0.9158574561437697,
+          "p": 0.09477523390543535,
+          "pct_change": -3.9639227976805858,
+          "rr": 0.9603607720231941,
+          "se_by_clustering": {
+            "assignment": 0.024208751311145887,
+            "lga": 0.024208751311145887,
+            "unit": 0.020611747132019357
+          },
+          "se_log": 0.024208751311145887
+        }
+      },
+      "90-110\u2192lower": {
+        "cells": {
+          "hi": 0.9910137168249676,
+          "lo": 0.4127664379355517,
+          "pct_change": -36.042420164681545,
+          "rr": 0.6395757983531846,
+          "se_log_model_based": 0.2234343253805663
+        },
+        "did": {
+          "clusters": {
+            "assignment": 54,
+            "lga": 22,
+            "unit": 1333
+          },
+          "comparison_after": 1367,
+          "comparison_before": 2548,
+          "comparison_units": 21883,
+          "hi": 1.04526133209636,
+          "lo": 0.39134443155829357,
+          "p": 0.0745312621682989,
+          "pct_change": -36.042420164681445,
+          "rr": 0.6395757983531856,
+          "se_by_clustering": {
+            "assignment": 0.25062555749699617,
+            "lga": 0.20762344245384518,
+            "unit": 0.2494711809298443
+          },
+          "se_log": 0.25062555749699617,
+          "strata_used": 32,
+          "treated_after": 28,
+          "treated_before": 91,
+          "treated_km": 339.58430433824543,
+          "treated_units": 94
+        },
+        "eb": {
+          "expected_after": 34.35617483430025,
+          "hi": 1.1413069802242521,
+          "lo": 0.4728388513411911,
+          "observed_after": 28,
+          "pct_change": -19.292708421727845,
+          "rr": 0.8070729157827216
+        },
+        "naive": {
+          "clusters": {
+            "assignment": 33,
+            "lga": 23,
+            "unit": 46
+          },
+          "comparison_after": 0,
+          "comparison_before": 0,
+          "comparison_units": 0,
+          "hi": 1.069652399643735,
+          "lo": 0.4002198222827436,
+          "p": 0.09074583807499523,
+          "pct_change": -34.570947333029046,
+          "rr": 0.6542905266697095,
+          "se_by_clustering": {
+            "assignment": 0.2507890610916877,
+            "lga": 0.21064287315667252,
+            "unit": 0.24777970812651298
+          },
+          "se_log": 0.2507890610916877,
+          "treated_after": 28,
+          "treated_before": 92,
+          "treated_km": 395.61249450437595,
+          "treated_units": 139
+        },
+        "placebo_did": {
+          "clusters": {
+            "assignment": 62,
+            "lga": 24,
+            "unit": 1405
+          },
+          "comparison_after": 2346,
+          "comparison_before": 2145,
+          "comparison_units": 21869,
+          "hi": 1.054657584198041,
+          "lo": 0.6212593055720406,
+          "p": 0.1173967163282839,
+          "pct_change": -19.05459627778975,
+          "rr": 0.8094540372221025,
+          "se_by_clustering": {
+            "assignment": 0.11915832782200407,
+            "lga": 0.1228595032968328,
+            "unit": 0.1350083145404171
+          },
+          "se_log": 0.1350083145404171,
+          "strata_used": 35,
+          "treated_after": 89,
+          "treated_before": 96,
+          "treated_km": 363.0485189023245,
+          "treated_units": 105
+        },
+        "trend": {
+          "clusters": {
+            "assignment": 30,
+            "lga": 30,
+            "unit": 1645
+          },
+          "hi": 1.1026203723801666,
+          "lo": 0.9169256307718223,
+          "p": 0.9072665023208701,
+          "pct_change": 0.5495340837811113,
+          "rr": 1.0054953408378111,
+          "se_by_clustering": {
+            "assignment": 0.047046377960694524,
+            "lga": 0.047046377960694524,
+            "unit": 0.037923622142635616
+          },
+          "se_log": 0.047046377960694524
+        }
+      }
+    },
+    "cohorts": [
+      {
+        "after": "2023-10..2025-12",
+        "before": "2020-07..2023-06",
+        "cohort": "2023_09",
+        "crashes_after": 19,
+        "crashes_before": 19,
+        "units": 36
+      },
+      {
+        "after": "2023-12..2025-12",
+        "before": "2020-10..2023-09",
+        "cohort": "2023_11",
+        "crashes_after": 2,
+        "crashes_before": 14,
+        "units": 21
+      },
+      {
+        "after": "2024-03..2025-12",
+        "before": "2020-12..2023-11",
+        "cohort": "2024_02",
+        "crashes_after": 7,
+        "crashes_before": 6,
+        "units": 63
+      },
+      {
+        "after": "2024-04..2025-12",
+        "before": "2021-03..2024-02",
+        "cohort": "2024_03",
+        "crashes_after": 5,
+        "crashes_before": 16,
+        "units": 35
+      },
+      {
+        "after": "2024-07..2025-12",
+        "before": "2021-04..2024-03",
+        "cohort": "2024_06",
+        "crashes_after": 81,
+        "crashes_before": 196,
+        "units": 492
+      },
+      {
+        "after": "2024-10..2025-12",
+        "before": "2021-07..2024-06",
+        "cohort": "2024_09",
+        "crashes_after": 47,
+        "crashes_before": 154,
+        "units": 208
+      },
+      {
+        "after": "2025-01..2025-12",
+        "before": "2021-10..2024-09",
+        "cohort": "2024_12",
+        "crashes_after": 30,
+        "crashes_before": 112,
+        "units": 254
+      }
+    ],
+    "fsi": {
+      "cells": {
+        "hi": 1.0993095001620208,
+        "lo": 0.5795316448927874,
+        "pct_change": -20.182417796881126,
+        "rr": 0.7981758220311888,
+        "se_log_model_based": 0.16332373095470085
+      },
+      "did": {
+        "clusters": {
+          "assignment": 140,
+          "lga": 68,
+          "unit": 3575
+        },
+        "comparison_after": 2668,
+        "comparison_before": 5676,
+        "comparison_units": 24969,
+        "hi": 1.099935754702064,
+        "lo": 0.5792016853272718,
+        "p": 0.1682677152981188,
+        "pct_change": -20.182417796881357,
+        "rr": 0.7981758220311864,
+        "se_by_clustering": {
+          "assignment": 0.16361430655030693,
+          "lga": 0.12532488932100297,
+          "unit": 0.16036718893736465
+        },
+        "se_log": 0.16361430655030693,
+        "strata_used": 80,
+        "treated_after": 60,
+        "treated_before": 152,
+        "treated_km": 515.7037436055862,
+        "treated_units": 631
+      },
+      "eb": {
+        "expected_after": 69.45420540214211,
+        "hi": 1.1309265923410972,
+        "lo": 0.6489441457460677,
+        "observed_after": 62,
+        "pct_change": -11.006463095641761,
+        "rr": 0.8899353690435824
+      },
+      "naive": {
+        "clusters": {
+          "assignment": 76,
+          "lga": 37,
+          "unit": 152
+        },
+        "comparison_after": 0,
+        "comparison_before": 0,
+        "comparison_units": 0,
+        "hi": 1.2060141208543091,
+        "lo": 0.6335725941315252,
+        "p": 0.4126480139235318,
+        "pct_change": -12.587329573515749,
+        "rr": 0.8741267042648425,
+        "se_by_clustering": {
+          "assignment": 0.16421258265454974,
+          "lga": 0.13076620006869175,
+          "unit": 0.15301875828678657
+        },
+        "se_log": 0.16421258265454974,
+        "treated_after": 62,
+        "treated_before": 153,
+        "treated_km": 777.4265390705216,
+        "treated_units": 1109
+      },
+      "trend": {
+        "clusters": {
+          "assignment": 74,
+          "lga": 74,
+          "unit": 5308
+        },
+        "hi": 1.0953829704947544,
+        "lo": 0.9711743407802603,
+        "p": 0.31378578925513345,
+        "pct_change": 3.1410604110781115,
+        "rr": 1.0314106041107811,
+        "se_by_clustering": {
+          "assignment": 0.030702943016093238,
+          "lga": 0.030702943016093238,
+          "unit": 0.025254276016493396
+        },
+        "se_log": 0.030702943016093238
+      }
+    },
+    "injury": {
+      "cells": {
+        "hi": 0.9656727667643893,
+        "lo": 0.6781994115144325,
+        "pct_change": -19.072952473531892,
+        "rr": 0.8092704752646811,
+        "se_log_model_based": 0.09015054972634809
+      },
+      "did": {
+        "clusters": {
+          "assignment": 189,
+          "lga": 75,
+          "unit": 7545
+        },
+        "comparison_after": 8481,
+        "comparison_before": 19079,
+        "comparison_units": 46396,
+        "hi": 0.9941360323032681,
+        "lo": 0.6587817771957993,
+        "p": 0.04380094095108447,
+        "pct_change": -19.0729524735316,
+        "rr": 0.809270475264684,
+        "se_by_clustering": {
+          "assignment": 0.083441440261818,
+          "lga": 0.10497175289884995,
+          "unit": 0.09810184409016828
+        },
+        "se_log": 0.10497175289884995,
+        "strata_used": 114,
+        "treated_after": 191,
+        "treated_before": 516,
+        "treated_km": 638.4971857665689,
+        "treated_units": 836
+      },
+      "eb": {
+        "expected_after": 194.7386043895266,
+        "hi": 1.1355424638609293,
+        "lo": 0.8233269772557386,
+        "observed_after": 191,
+        "pct_change": -2.0565279441666084,
+        "rr": 0.9794347205583339
+      },
+      "naive": {
+        "clusters": {
+          "assignment": 115,
+          "lga": 41,
+          "unit": 286
+        },
+        "comparison_after": 0,
+        "comparison_before": 0,
+        "comparison_units": 0,
+        "hi": 1.0123736898181628,
+        "lo": 0.6395279145578326,
+        "p": 0.06359435629719087,
+        "pct_change": -19.53626688982001,
+        "rr": 0.8046373311017999,
+        "se_by_clustering": {
+          "assignment": 0.09733877960015994,
+          "lga": 0.11717632817156555,
+          "unit": 0.09904305086271062
+        },
+        "se_log": 0.11717632817156555,
+        "treated_after": 191,
+        "treated_before": 517,
+        "treated_km": 777.4265390705216,
+        "treated_units": 1109
+      },
+      "trend": {
+        "clusters": {
+          "assignment": 78,
+          "lga": 78,
+          "unit": 9589
+        },
+        "hi": 1.0068201379118544,
+        "lo": 0.9218871650775421,
+        "p": 0.09739027470279925,
+        "pct_change": -3.6581833946162656,
+        "rr": 0.9634181660538373,
+        "se_by_clustering": {
+          "assignment": 0.022482410264329403,
+          "lga": 0.022482410264329403,
+          "unit": 0.014811639743439638
+        },
+        "se_log": 0.022482410264329403
+      }
+    },
+    "injury_placebo": {
+      "did": {
+        "clusters": {
+          "assignment": 200,
+          "lga": 77,
+          "unit": 8576
+        },
+        "comparison_after": 21522,
+        "comparison_before": 20441,
+        "comparison_units": 52986,
+        "hi": 1.1457583011148258,
+        "lo": 0.8754654713282746,
+        "p": 0.9821752298659129,
+        "pct_change": 0.15347378467578388,
+        "rr": 1.0015347378467578,
+        "se_by_clustering": {
+          "assignment": 0.0634916868016927,
+          "lga": 0.06012667075119089,
+          "unit": 0.0686406118565669
+        },
+        "se_log": 0.0686406118565669,
+        "strata_used": 120,
+        "treated_after": 484,
+        "treated_before": 465,
+        "treated_km": 660.6599121237464,
+        "treated_units": 841
+      },
+      "eb": {
+        "expected_after": 409.80836465339564,
+        "hi": 1.3169119158596543,
+        "lo": 1.0416533374432706,
+        "observed_after": 484,
+        "pct_change": 17.928262665146242,
+        "rr": 1.1792826266514624
+      },
+      "naive": {
+        "clusters": {
+          "assignment": 123,
+          "lga": 41,
+          "unit": 324
+        },
+        "comparison_after": 0,
+        "comparison_before": 0,
+        "comparison_units": 0,
+        "hi": 1.2832553994584348,
+        "lo": 0.9993025909302129,
+        "p": 0.05129192711585886,
+        "pct_change": 13.241354879920042,
+        "rr": 1.1324135487992004,
+        "se_by_clustering": {
+          "assignment": 0.06380162657719121,
+          "lga": 0.05768341342386795,
+          "unit": 0.060743891764251406
+        },
+        "se_log": 0.06380162657719121,
+        "treated_after": 484,
+        "treated_before": 465,
+        "treated_km": 777.4265390705216,
+        "treated_units": 1109
+      },
+      "trend": {
+        "clusters": {
+          "assignment": 79,
+          "lga": 79,
+          "unit": 10805
+        },
+        "hi": 1.185302697320558,
+        "lo": 1.115179922839923,
+        "p": 3.034387158815842e-19,
+        "pct_change": 14.970681938479103,
+        "rr": 1.149706819384791,
+        "se_by_clustering": {
+          "assignment": 0.015557026831807782,
+          "lga": 0.015557026831807782,
+          "unit": 0.012280135239770031
+        },
+        "se_log": 0.015557026831807782
+      }
+    },
+    "pre_period_rates": [
+      {
+        "change_type": "50\u219240",
+        "comparison_rate_per_km_yr": 0.0979717200647744,
+        "ratio": 3.2765424443788027,
+        "treated_rate_per_km_yr": 0.32100849914103174,
+        "treated_units": 396
+      },
+      {
+        "change_type": "60\u219240/50",
+        "comparison_rate_per_km_yr": 0.5641685339887046,
+        "ratio": 0.7651641952473286,
+        "treated_rate_per_km_yr": 0.4316815622933323,
+        "treated_units": 208
+      },
+      {
+        "change_type": "70/80\u2192lower",
+        "comparison_rate_per_km_yr": 0.41272934869414396,
+        "ratio": 0.9166523663003769,
+        "treated_rate_per_km_yr": 0.37832933412210046,
+        "treated_units": 366
+      },
+      {
+        "change_type": "90-110\u2192lower",
+        "comparison_rate_per_km_yr": 0.016584195463797746,
+        "ratio": 4.674144835310407,
+        "treated_rate_per_km_yr": 0.07751693157488851,
+        "treated_units": 139
+      }
+    ],
+    "sensitivity": {
+      "12-month before window": {
+        "clusters": {
+          "assignment": 152,
+          "lga": 73,
+          "unit": 4752
+        },
+        "comparison_after": 7399,
+        "comparison_before": 5773,
+        "comparison_units": 33506,
+        "hi": 0.9980360035568943,
+        "lo": 0.635738066080092,
+        "p": 0.04803586287240957,
+        "pct_change": -20.345152138770384,
+        "rr": 0.7965484786122962,
+        "se_by_clustering": {
+          "assignment": 0.0996333337151678,
+          "lga": 0.09715543461219546,
+          "unit": 0.11505382717405195
+        },
+        "se_log": 0.11505382717405195,
+        "strata_used": 83,
+        "treated_after": 190,
+        "treated_before": 179,
+        "treated_km": 524.4323719694207,
+        "treated_units": 680
+      },
+      "24-month before window": {
+        "clusters": {
+          "assignment": 175,
+          "lga": 75,
+          "unit": 6127
+        },
+        "comparison_after": 8003,
+        "comparison_before": 12367,
+        "comparison_units": 37573,
+        "hi": 0.9615690954568082,
+        "lo": 0.6385319074881769,
+        "p": 0.019533252076706385,
+        "pct_change": -21.642323368816207,
+        "rr": 0.7835767663118379,
+        "se_by_clustering": {
+          "assignment": 0.0853415110172497,
+          "lga": 0.09888218295538666,
+          "unit": 0.1044393615900441
+        },
+        "se_log": 0.1044393615900441,
+        "strata_used": 103,
+        "treated_after": 190,
+        "treated_before": 364,
+        "treated_km": 593.5447382412272,
+        "treated_units": 787
+      },
+      "60-month before window": {
+        "clusters": {
+          "assignment": 200,
+          "lga": 77,
+          "unit": 9277
+        },
+        "comparison_after": 8648,
+        "comparison_before": 31035,
+        "comparison_units": 53550,
+        "hi": 0.9651309338549009,
+        "lo": 0.665308172349409,
+        "p": 0.01959885708639757,
+        "pct_change": -19.86826485836698,
+        "rr": 0.8013173514163302,
+        "se_by_clustering": {
+          "assignment": 0.08505815432902837,
+          "lga": 0.09365694238883943,
+          "unit": 0.09490312692171866
+        },
+        "se_log": 0.09490312692171866,
+        "strata_used": 122,
+        "treated_after": 191,
+        "treated_before": 841,
+        "treated_km": 656.200176176342,
+        "treated_units": 862
+      },
+      "buffer 15 m": {
+        "clusters": {
+          "assignment": 189,
+          "lga": 75,
+          "unit": 7534
+        },
+        "comparison_after": 8421,
+        "comparison_before": 19055,
+        "comparison_units": 46396,
+        "hi": 1.0072589365737648,
+        "lo": 0.6790065501912442,
+        "p": 0.0590164900101163,
+        "pct_change": -17.299612112623485,
+        "rr": 0.8270038788737651,
+        "se_by_clustering": {
+          "assignment": 0.08112445005231488,
+          "lga": 0.10060317994340746,
+          "unit": 0.09754693656694255
+        },
+        "se_log": 0.10060317994340746,
+        "strata_used": 114,
+        "treated_after": 191,
+        "treated_before": 516,
+        "treated_km": 638.4971857665689,
+        "treated_units": 836
+      },
+      "buffer 50 m": {
+        "clusters": {
+          "assignment": 189,
+          "lga": 75,
+          "unit": 7546
+        },
+        "comparison_after": 8490,
+        "comparison_before": 19081,
+        "comparison_units": 46396,
+        "hi": 0.9913967731162246,
+        "lo": 0.6514736605433684,
+        "p": 0.041287601971655374,
+        "pct_change": -19.634031777567053,
+        "rr": 0.8036596822243295,
+        "se_by_clustering": {
+          "assignment": 0.08422915502997726,
+          "lga": 0.10711366736869958,
+          "unit": 0.09820587483422857
+        },
+        "se_log": 0.10711366736869958,
+        "strata_used": 114,
+        "treated_after": 191,
+        "treated_before": 516,
+        "treated_km": 638.4971857665689,
+        "treated_units": 836
+      },
+      "midblock crashes only": {
+        "clusters": {
+          "assignment": 169,
+          "lga": 72,
+          "unit": 5769
+        },
+        "comparison_after": 4991,
+        "comparison_before": 11453,
+        "comparison_units": 44338,
+        "hi": 0.9137164763728419,
+        "lo": 0.5352215227918716,
+        "p": 0.008759233081891981,
+        "pct_change": -30.068553290790867,
+        "rr": 0.6993144670920913,
+        "se_by_clustering": {
+          "assignment": 0.13644117951590112,
+          "lga": 0.12935331622654975,
+          "unit": 0.13251584392841226
+        },
+        "se_log": 0.13644117951590112,
+        "strata_used": 101,
+        "treated_after": 94,
+        "treated_before": 299,
+        "treated_km": 617.5003287934375,
+        "treated_units": 803
+      },
+      "placebo (change moved 36 months earlier)": {
+        "clusters": {
+          "assignment": 200,
+          "lga": 77,
+          "unit": 8576
+        },
+        "comparison_after": 21522,
+        "comparison_before": 20441,
+        "comparison_units": 52986,
+        "hi": 1.1457583011148258,
+        "lo": 0.8754654713282746,
+        "p": 0.9821752298659129,
+        "pct_change": 0.15347378467578388,
+        "rr": 1.0015347378467578,
+        "se_by_clustering": {
+          "assignment": 0.0634916868016927,
+          "lga": 0.06012667075119089,
+          "unit": 0.0686406118565669
+        },
+        "se_log": 0.0686406118565669,
+        "strata_used": 120,
+        "treated_after": 484,
+        "treated_before": 465,
+        "treated_km": 660.6599121237464,
+        "treated_units": 841
+      },
+      "region strata only": {
+        "clusters": {
+          "assignment": 200,
+          "lga": 85,
+          "unit": 24380
+        },
+        "comparison_after": 64057,
+        "comparison_before": 132271,
+        "comparison_units": 239626,
+        "hi": 1.0237439557224448,
+        "lo": 0.6539534219386046,
+        "p": 0.07930698302847296,
+        "pct_change": -18.178189763752094,
+        "rr": 0.818218102362479,
+        "se_by_clustering": {
+          "assignment": 0.09654381820684232,
+          "lga": 0.11433516188309552,
+          "unit": 0.10006682223350383
+        },
+        "se_log": 0.11433516188309552,
+        "strata_used": 62,
+        "treated_after": 191,
+        "treated_before": 517,
+        "treated_km": 736.0918720622349,
+        "treated_units": 1024
+      },
+      "transition padded 3 months each side": {
+        "clusters": {
+          "assignment": 187,
+          "lga": 75,
+          "unit": 7381
+        },
+        "comparison_after": 6754,
+        "comparison_before": 18803,
+        "comparison_units": 46396,
+        "hi": 1.0646895753920624,
+        "lo": 0.697947580862274,
+        "p": 0.16816944587087856,
+        "pct_change": -13.796896023741013,
+        "rr": 0.8620310397625899,
+        "se_by_clustering": {
+          "assignment": 0.08270699562549684,
+          "lga": 0.10773018184497005,
+          "unit": 0.10422909785192581
+        },
+        "se_log": 0.10773018184497005,
+        "strata_used": 112,
+        "treated_after": 161,
+        "treated_before": 513,
+        "treated_km": 634.9706217615633,
+        "treated_units": 824
+      }
+    },
+    "timings_s": {
+      "by change type": 4.7,
+      "main": 3.8,
+      "placebo + sensitivity": 9.3
+    }
+  },
+  "ingest": {
+    "crash_datum_check": {
+      "median_offset_m_if_gda2020": 1.59,
+      "median_offset_m_if_gda94": 0.37
+    },
+    "crash_tables": {
+      "accident": {
+        "csv_mb": 34.7,
+        "parquet_mb": 3.3,
+        "rows": 202297
+      },
+      "accident_location": {
+        "csv_mb": 12.6,
+        "parquet_mb": 3.5,
+        "rows": 202297
+      },
+      "node": {
+        "csv_mb": 51.5,
+        "parquet_mb": 6.0,
+        "rows": 407410
+      }
+    },
+    "crashes": {
+      "first_date": "2012-01-01",
+      "last_date": "2026-02-28",
+      "no_location": 1294,
+      "recent_monthly_counts": {
+        "2025-07": 1258,
+        "2025-08": 1300,
+        "2025-09": 1100,
+        "2025-10": 1291,
+        "2025-11": 1134,
+        "2025-12": 1122,
+        "2026-01": 138,
+        "2026-02": 90
+      },
+      "rows": 202297,
+      "unique": 202297
+    },
+    "node_conflicting_crashes": 3148,
+    "node_rows": 407410,
+    "node_unique_crashes": 201003,
+    "snapshot_features_total": 6587787,
+    "snapshot_geojson_gb": 6.67,
+    "snapshot_parquet_mb": 418.6,
+    "snapshots": {
+      "2021_11": {
+        "features": 470060,
+        "geojson_mb": 494.6,
+        "parquet_mb": 146.2
+      },
+      "2023_06": {
+        "features": 470175,
+        "geojson_mb": 474.2,
+        "parquet_mb": 20.9
+      },
+      "2023_09": {
+        "features": 470186,
+        "geojson_mb": 474.2,
+        "parquet_mb": 20.9
+      },
+      "2023_11": {
+        "features": 470211,
+        "geojson_mb": 474.2,
+        "parquet_mb": 20.9
+      },
+      "2024_02": {
+        "features": 470237,
+        "geojson_mb": 474.2,
+        "parquet_mb": 20.9
+      },
+      "2024_03": {
+        "features": 470272,
+        "geojson_mb": 474.3,
+        "parquet_mb": 20.9
+      },
+      "2024_06": {
+        "features": 470377,
+        "geojson_mb": 474.5,
+        "parquet_mb": 20.9
+      },
+      "2024_09": {
+        "features": 470447,
+        "geojson_mb": 474.6,
+        "parquet_mb": 21.0
+      },
+      "2024_12": {
+        "features": 470521,
+        "geojson_mb": 474.7,
+        "parquet_mb": 21.0
+      },
+      "2025_03": {
+        "features": 470650,
+        "geojson_mb": 474.8,
+        "parquet_mb": 21.0
+      },
+      "2025_06": {
+        "features": 470784,
+        "geojson_mb": 474.9,
+        "parquet_mb": 21.0
+      },
+      "2025_10": {
+        "features": 470947,
+        "geojson_mb": 475.5,
+        "parquet_mb": 21.0
+      },
+      "2026_01": {
+        "features": 471094,
+        "geojson_mb": 475.8,
+        "parquet_mb": 21.0
+      },
+      "2026_09": {
+        "features": 471826,
+        "geojson_mb": 476.8,
+        "parquet_mb": 21.0
+      }
+    },
+    "timings_s": {
+      "crash tables": 0.6,
+      "snapshot 2021_11": 10.4,
+      "snapshot 2023_06": 10.7,
+      "snapshot 2023_09": 8.5,
+      "snapshot 2023_11": 8.3,
+      "snapshot 2024_02": 8.1,
+      "snapshot 2024_03": 7.8,
+      "snapshot 2024_06": 7.8,
+      "snapshot 2024_09": 7.9,
+      "snapshot 2024_12": 7.8,
+      "snapshot 2025_03": 7.8,
+      "snapshot 2025_06": 7.8,
+      "snapshot 2025_10": 7.8,
+      "snapshot 2026_01": 8.2,
+      "snapshot 2026_09": 7.9
+    }
+  },
+  "network": {
+    "aadt_features": 14662,
+    "base_direction_mismatch_units": 510,
+    "base_features": 470175,
+    "declared_km": 45316,
+    "declared_units": 47553,
+    "legacy_match_rate": 0.9999,
+    "lga_unknown_units": 0,
+    "network_km": 251354,
+    "timings_s": {
+      "declared roads": 8.1,
+      "legacy match": 11.7,
+      "lga": 1.2,
+      "snapshot limits": 3.4,
+      "units": 3.0
+    },
+    "units": 287966,
+    "units_by_n_features": {
+      "1": 106662,
+      "10": 1,
+      "11": 1,
+      "17": 1,
+      "2": 180462,
+      "3": 814,
+      "4": 21,
+      "6": 3,
+      "7": 1
+    }
+  },
+  "snap": {
+    "15m": {
+      "crashes_with_location": 201003,
+      "dist_m_quantiles": {
+        "0.5": 0.19,
+        "0.9": 0.62,
+        "0.95": 0.78,
+        "0.99": 1.85
+      },
+      "limit_agreement_since_base": 0.7581,
+      "limit_agreement_since_base_n": 34953,
+      "limit_agreement_since_base_normal_zones": 0.7728,
+      "limit_agreement_since_base_single": 0.7247,
+      "limit_agreement_since_base_single_n": 9610,
+      "limit_agreement_since_base_time_of_day_zones": 0.4803,
+      "matched_share": 0.9966,
+      "matched_share_by_node_type": {
+        "I": 0.9987,
+        "N": 0.9962
+      },
+      "near_tie_share": 0.7452,
+      "tie_rule_counts": {
+        "limit_match": 17527,
+        "nearest": 131767,
+        "single": 51034
+      }
+    },
+    "30m": {
+      "crashes_with_location": 201003,
+      "dist_m_quantiles": {
+        "0.5": 0.19,
+        "0.9": 0.62,
+        "0.95": 0.78,
+        "0.99": 2.22
+      },
+      "limit_agreement_since_base": 0.7577,
+      "limit_agreement_since_base_n": 35072,
+      "limit_agreement_since_base_normal_zones": 0.7722,
+      "limit_agreement_since_base_single": 0.7245,
+      "limit_agreement_since_base_single_n": 9658,
+      "limit_agreement_since_base_time_of_day_zones": 0.4803,
+      "matched_share": 0.9977,
+      "matched_share_by_node_type": {
+        "I": 0.9991,
+        "N": 0.9975
+      },
+      "near_tie_share": 0.745,
+      "tie_rule_counts": {
+        "limit_match": 17536,
+        "nearest": 131874,
+        "single": 51129
+      }
+    },
+    "50m": {
+      "crashes_with_location": 201003,
+      "dist_m_quantiles": {
+        "0.5": 0.19,
+        "0.9": 0.62,
+        "0.95": 0.79,
+        "0.99": 2.28
+      },
+      "limit_agreement_since_base": 0.7575,
+      "limit_agreement_since_base_n": 35092,
+      "limit_agreement_since_base_normal_zones": 0.772,
+      "limit_agreement_since_base_single": 0.7241,
+      "limit_agreement_since_base_single_n": 9668,
+      "limit_agreement_since_base_time_of_day_zones": 0.4803,
+      "matched_share": 0.9979,
+      "matched_share_by_node_type": {
+        "I": 0.9991,
+        "N": 0.9978
+      },
+      "near_tie_share": 0.745,
+      "tie_rule_counts": {
+        "limit_match": 17537,
+        "nearest": 131893,
+        "single": 51157
+      }
+    },
+    "datum_check": {
+      "median_dist_m_configured": 0.17,
+      "median_dist_m_if_speed_zones_gda2020": 0.86
+    },
+    "tie_tolerance_m": 2.0,
+    "timings_s": {
+      "snap 15 m": 2.6,
+      "snap 30 m": 2.9,
+      "snap 50 m": 3.3
+    }
+  },
+  "treatment": {
+    "all_changes_context": {
+      "changed": 9977,
+      "decreases": 9485,
+      "features_first": 470175,
+      "features_last": 471826,
+      "from": "2023_06",
+      "ids_kept": 470175,
+      "increases": 492,
+      "to": "2026_09"
+    },
+    "comparison_km": 242802,
+    "comparison_units": 271949,
+    "excluded_reasons": {
+      "change_outside_window": 2422,
+      "changed_2021_2023": 810,
+      "direction_mismatch": 256,
+      "geometry_redrawn": 469,
+      "increase": 254,
+      "limit_below_30_or_missing": 1507,
+      "multiple_changes": 18,
+      "no_2021_match": 548,
+      "time_of_day_zone": 8624
+    },
+    "snapshots_used": [
+      "2023_06",
+      "2023_09",
+      "2023_11",
+      "2024_02",
+      "2024_03",
+      "2024_06",
+      "2024_09",
+      "2024_12",
+      "2025_03",
+      "2025_06",
+      "2025_10",
+      "2026_01"
+    ],
+    "status_counts": {
+      "comparison": 271949,
+      "excluded": 14908,
+      "treated": 1109
+    },
+    "treated_by_cohort": {
+      "2023_09": 36,
+      "2023_11": 21,
+      "2024_02": 63,
+      "2024_03": 35,
+      "2024_06": 492,
+      "2024_09": 208,
+      "2024_12": 254
+    },
+    "treated_by_region": {
+      "metro": 649,
+      "regional": 460
+    },
+    "treated_by_type": {
+      "50\u219240": 396,
+      "60\u219240/50": 208,
+      "70/80\u2192lower": 366,
+      "90-110\u2192lower": 139
+    },
+    "treated_declared_share": 0.426,
+    "treated_km": 777.4,
+    "treated_schemes": 206,
+    "treated_top_lgas": {
+      "BASS COAST": 33,
+      "EAST GIPPSLAND": 36,
+      "GOLDEN PLAINS": 43,
+      "INDIGO": 36,
+      "MELBOURNE": 58,
+      "MELTON": 41,
+      "MERRI-BEK": 262,
+      "MORNINGTON PENINSULA": 88,
+      "WARRNAMBOOL": 31,
+      "WYNDHAM": 50
+    },
+    "treated_units": 1109,
+    "treated_unknown_scheme_units": 0
+  },
+  "yarra": {
+    "after": [
+      "2024-06",
+      "2025-12"
+    ],
+    "after_months": 19,
+    "before": [
+      "2021-01",
+      "2024-04"
+    ],
+    "before_months": 40,
+    "comparison_localities": [
+      "CARLTON",
+      "CARLTON NORTH",
+      "FITZROY NORTH",
+      "CLIFTON HILL",
+      "ABBOTSFORD",
+      "RICHMOND",
+      "EAST MELBOURNE",
+      "BRUNSWICK EAST",
+      "NORTHCOTE"
+    ],
+    "crashes": {
+      "comparison_after": 272,
+      "comparison_before": 528,
+      "treated_after": 58,
+      "treated_before": 157
+    },
+    "did": {
+      "clusters": {
+        "assignment": 477,
+        "unit": 477
+      },
+      "hi": 1.0240262386639312,
+      "lo": 0.5021987583075769,
+      "p": 0.06734821262378073,
+      "pct_change": -28.28774822030725,
+      "rr": 0.7171225177969275,
+      "se_by_clustering": {
+        "assignment": 0.1817639137126523,
+        "unit": 0.1817639137126523
+      },
+      "se_log": 0.1817639137126523
+    },
+    "fidelity_coded_30": {
+      "comparison_after": {
+        "coded_30": 0,
+        "crashes": 272,
+        "share": 0.0
+      },
+      "comparison_before": {
+        "coded_30": 2,
+        "crashes": 528,
+        "share": 0.003787878787878788
+      },
+      "treated_after": {
+        "coded_30": 23,
+        "crashes": 58,
+        "share": 0.39655172413793105
+      },
+      "treated_before": {
+        "coded_30": 3,
+        "crashes": 157,
+        "share": 0.01910828025477707
+      }
+    },
+    "km": {
+      "comparison": 424.6,
+      "treated": 63.4
+    },
+    "naive": {
+      "hi": 1.0574012724795425,
+      "lo": 0.5652571206767568,
+      "rr": 0.7777405296681195
+    },
+    "power_wald_95": {
+      "true_20pct_reduction": 0.2683,
+      "true_40pct_reduction": 0.8297
+    },
+    "rate_per_km_yr": {
+      "comparison_after": 0.4046109057299373,
+      "comparison_before": 0.37307505572451566,
+      "treated_after": 0.5774525160882247,
+      "treated_before": 0.7424745066772303
+    },
+    "start": "2024-05-09",
+    "treated_localities": [
+      "FITZROY",
+      "COLLINGWOOD"
+    ],
+    "units": {
+      "comparison": 2374,
+      "treated": 363
+    }
+  }
+}
