@@ -171,7 +171,35 @@ def build_map() -> None:
                        tooltip=folium.GeoJsonTooltip(fields=["limit_before"], aliases=["Limit before trial"])).add_to(fg)
         fg.add_to(fmap)
     folium.LayerControl(collapsed=False).add_to(fmap)
+    fmap.get_root().html.add_child(folium.Element(_map_panels([ct for ct in TYPE_COLORS if (tu.change_type == ct).any()])))
     fmap.save(config.OUTPUTS / "map.html")
+
+
+def _month_label(key: str) -> str:
+    """'2023_09' -> 'Sep 2023'."""
+    return pd.Timestamp(config.snapshot_month(key) + "-01").strftime("%b %Y")
+
+
+def _map_panels(types: list[str]) -> str:
+    """Fixed title (top left, clear of the zoom control) and legend (bottom right, above the attribution).
+    Neither covers the zoom control, the scale bar (bottom left) or the layer control (top right)."""
+    first, last = (_month_label(k) for k in config.TREAT_FIRST_SEEN)
+    box = (f"position:fixed;z-index:1000;background:rgba(255,255,255,0.94);color:{INK};"
+           "font-family:system-ui,-apple-system,'Segoe UI',sans-serif;border-radius:6px;"
+           "box-shadow:0 1px 4px rgba(0,0,0,0.3);")
+    line = lambda c: f'<span style="display:inline-block;width:22px;height:4px;border-radius:2px;background:{c};vertical-align:middle;margin-right:8px"></span>'
+    dot = lambda c: f'<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:{c};vertical-align:middle;margin:0 14px 0 6px"></span>'
+    rows = "".join(f'<div style="margin:3px 0">{line(TYPE_COLORS[ct])}Lowered {ct} km/h</div>' for ct in types)
+    rows += (f'<div style="margin:3px 0">{dot(MUTED)}Injury crash, before the change</div>'
+             f'<div style="margin:3px 0">{dot(RED)}Injury crash, after the change</div>')
+    title = (f'<div style="{box}top:10px;left:56px;max-width:calc(100% - 400px);padding:8px 12px">'
+             f'<div style="font-size:15px;font-weight:600">Victorian speed-limit reductions (first seen {first}–{last}) and injury crashes</div>'
+             f'<div style="font-size:12px;color:{INK2};margin-top:2px">Crash dots are police-reported injury crashes on the lowered '
+             f"segments, inside each segment's before / after window. Hover a segment for its change and counts.</div></div>")
+    legend = (f'<div style="{box}bottom:26px;right:10px;padding:8px 12px;font-size:12px">{rows}'
+              f'<div style="font-size:11px;color:{INK2};margin-top:6px;border-top:1px solid {GRID};padding-top:5px">'
+              "Data: Victorian Government (DTP, Vicmap), CC BY 4.0. Analysis: Zhenqian Liu</div></div>")
+    return title + legend
 
 
 def _f(x, nd=2):
