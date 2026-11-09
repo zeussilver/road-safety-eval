@@ -20,8 +20,8 @@
 DTP publishes a monthly map of every posted speed limit in Victoria. Comparing the maps over time shows
 exactly which stretches of road had their limit lowered and roughly when. We found **1,109 road
 segments (777 km, 206 separate speed-zone changes)** lowered between September 2023
-and December 2024. We compared them with **271,949 segments whose limit never changed**,
-matched on the original limit, the type of road and the council area.
+and December 2024. We compared them with similar segments whose limit never changed, drawn from
+**271,949 candidates** and matched on the original limit, the type of road and the council area.
 
 For each segment we counted police-reported injury crashes in the three years before the change and in
 the 12–27 months after it, up to December 2025, the latest complete month.
@@ -50,18 +50,19 @@ weather, enforcement, chance. To show why the comparison roads matter, we preten
 three years earlier, when nothing actually happened:
 
 - A simple before-and-after count on these roads would have reported crashes **up 13%**.
-- The comparison roads rose by a similar amount (up 15%), so our method correctly reported **no
-  change** (a 0% difference).
-- A standard statistical correction for "roads picked because of a bad year" (Empirical Bayes) wrongly
-  reported crashes **up 18%**. It depends on knowing how much traffic each road carries, and the public
-  traffic counts stop in 2019. We therefore do not rely on it.
+- The comparison roads rose by a similar amount (up 15%), and our method reported **no
+  change** (0%).
+- Our version of a standard correction for "roads picked because of a bad year" (Empirical Bayes) reported
+  crashes **up 18%**, probably because it needs current traffic volumes, and public counts stop in 2019.
+  We therefore do not rely on it.
 
 ## How confident are we?
 
 **Supports the result**
 - The fake-date test above passes.
 - The answer barely moves whether we use one year or five years of "before" data (between 20% and
-  22% fewer). If the roads had been chosen because of a recent spike in crashes, it would move.
+  22% fewer). That argues against the result being a bounce-back from a recent spike in crashes,
+  though it does not rule it out.
 - 8 variations (how crashes are matched to roads, how change dates are handled, how roads are grouped)
   all point the same way, giving between 14% and 30% fewer.
 
@@ -81,8 +82,9 @@ three years earlier, when nothing actually happened:
 2. **Record trial limits in the Speed Zones data.** The Fitzroy and Collingwood 30 km/h trial is missing from
    it, although police crash reports show the new limit (40% of crashes on trial streets were recorded
    as 30 km/h, up from 2%).
-3. **Add operating speeds and current traffic volumes**, for example from connected-vehicle data. That would
-   show whether speeds actually fell, and would fix the main weakness found here.
+3. **Add operating speeds and current traffic volumes.** Connected-vehicle data could show whether speeds
+   actually fell on the treated roads. Current volumes need validated counts; they would address the main
+   weakness found here.
 4. **Repeat the analysis as 2026 crash data arrives.** The pipeline reruns with one command; local-street
    changes in particular need more time.
 5. **Republish the January 2024 Speed Zones file**, which downloads corrupted from the open data portal.

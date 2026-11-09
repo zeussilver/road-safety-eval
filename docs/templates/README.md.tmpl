@@ -24,13 +24,13 @@ roads. It cannot prove the limit change caused that movement.
 | Trend on comparison roads | $trend_rr ($trend_lo–$trend_hi) |
 | **Comparison-group difference-in-differences (main)** | **$did_rr ($did_lo–$did_hi)** |
 | Same DiD, fatal + serious injury crashes only | $fsi_rr ($fsi_lo–$fsi_hi) |
-| Empirical Bayes before–after (fails its placebo, see below) | $eb_rr ($eb_lo–$eb_hi) |
+| Empirical Bayes before–after (my specification fails its placebo, see below) | $eb_rr ($eb_lo–$eb_hi) |
 | Placebo: same DiD with the change moved 3 years earlier | $pl_did_rr ($pl_did_lo–$pl_did_hi) |
 
-- **Sample.** $treated_units treated road segments ($treated_km km, $treated_schemes change requests)
-  versus $comparison_units never-changed segments. $did_units treated segments ($did_km km) fall in strata that
-  inform the estimate. They had $did_tb injury crashes in the 36 months before the change and $did_ta afterwards
-  ($after_min–$after_max months, to 2025-12).
+- **Sample.** $treated_units treated road segments ($treated_km km, $treated_schemes change requests) and a
+  candidate pool of $comparison_units never-changed segments. The main estimate uses the strata that inform it:
+  $did_units treated segments ($did_km km) against $did_cu comparison segments. The treated segments had $did_tb
+  injury crashes in the 36 months before the change and $did_ta afterwards ($after_min–$after_max months, to 2025-12).
 - **Main estimate.** Injury crashes on treated roads were **$did_phrase** than the comparison-road trend
   predicts. The rate ratio is $did_rr, with a 95% CI of $did_lo–$did_hi ($did_range). The evidence is modest:
   in $sens_cross1 of $sens_n sensitivity analyses the interval reaches 1 (no change). Point estimates
@@ -40,14 +40,16 @@ roads. It cannot prove the limit change caused that movement.
   over this short follow-up.
 - **Checks.** The placebo (fake change three years earlier) returns $pl_did_rr, so treated and comparison
   roads moved together before the change. Varying the before window from 12 to 60 months keeps the
-  estimate between $bw_min and $bw_max (main analysis, 36 months: $did_rr). If regression to the mean were
-  driving the result, short windows would show bigger reductions.
+  estimate between $bw_min and $bw_max (main analysis, 36 months: $did_rr). Stable estimates across windows
+  argue against a large regression-to-the-mean effect but do not rule it out: the event-time plot shows treated
+  roads rising faster in the 1–2 years before the change, and an event study is the next step.
 - **Why the comparison group matters.** In the placebo period, a naive before–after count says crashes on
-  these roads rose $pl_naive_pct% ($pl_naive_rr). The rise came from the post-lockdown rebound, which
-  comparison roads also show ($pl_trend_rr). The DiD correctly reports no change.
-- **Empirical Bayes fails its own placebo** ($pl_eb_rr, $pl_eb_lo–$pl_eb_hi, with no real change). Its
-  safety performance function has no current traffic volumes (open AADT stops in 2019), so it cannot tell a
-  busy road from an unlucky one and over-corrects. The main estimate is therefore not based on EB.
+  these roads rose $pl_naive_pct% ($pl_naive_rr). Comparison roads rose by a similar amount ($pl_trend_rr),
+  consistent with a shared shock such as the post-lockdown rebound, and the DiD estimate is $pl_did_rr.
+- **My Empirical Bayes specification fails its placebo** ($pl_eb_rr, $pl_eb_lo–$pl_eb_hi, with no real
+  change), probably because its safety performance function has no current traffic volumes (open AADT ends
+  in 2019) and so cannot separate a busy road from an unlucky one. EB is a standard road-safety method; this
+  specification is what failed, so the main estimate does not rely on it.
 - **Yarra 30 km/h trial (case study).** Injury crashes on the trial streets went from $y_tb in $y_mb months
   to $y_ta in $y_ma months. The DiD rate ratio is $y_did_rr ($y_did_lo–$y_did_hi, p = $y_did_p). The study is
   underpowered: it would detect a true 20% reduction only $y_pow20% of the time.
@@ -112,9 +114,10 @@ download → ingest → network → treatment → snap → evaluate → yarra �
    between two snapshots. Those months are dropped as a transition period.
 4. **Snapping.** Every unit within 30 m is a candidate. Candidates within 2 m of the nearest are a near-tie
    (intersections, two-direction arterials). A near-tie goes to the unit whose limit at the crash date
-   matches the police-recorded speed zone, otherwise to the nearest. $match_share% of located crashes match
-   (intersections $match_I%, midblock $match_N%), at a median distance of $dist_p50 m (95th percentile
-   $dist_p95 m). Police speed zone agrees with the posted limit for $agree_normal% of crashes since Jun 2023 on
+   matches the police-recorded speed zone, otherwise to the nearest. $match_share% of located crashes are
+   assigned to a unit within 30 m (intersections $match_I%, midblock $match_N%), at a median distance of
+   $dist_p50 m (95th percentile $dist_p95 m). That is coverage, not accuracy: $near_tie% of assignments are
+   near-ties, and the midblock-only rerun ($sens_mid) is the check on the tie rule. Police speed zone agrees with the posted limit for $agree_normal% of crashes since Jun 2023 on
    normal segments and $agree_tod% on time-of-day zones.
 5. **Evaluation (stacked DiD).** Each first-seen snapshot is a cohort with its own windows: 36 months before,
    the transition dropped, then after to 2025-12. Comparison units come from the same stratum: original
@@ -162,7 +165,8 @@ $sens_table
 
 The event-time plot shows treated roads rising faster than comparison roads in the 1–2 years before the
 change. If schemes had been triggered by that rise, short before windows would show larger reductions than
-long ones. The before-window rows above show they do not.
+long ones; the before-window rows above do not, which argues against a large regression-to-the-mean effect
+without ruling it out. An event study with leads and lags is the next step.
 
 ### Yarra 30 km/h case study
 
@@ -199,9 +203,9 @@ reduction, but this sample cannot confirm it.
 
 ## What connected-vehicle data would add
 
-No connected-vehicle data is public, and none is simulated here. With operating speeds per segment over
-time, the same units and windows would answer the first-order question (did speeds drop?). They would also
-supply the missing exposure term, which is exactly what made the EB estimate unreliable here.
+No connected-vehicle data is public, and none is simulated here. Operating speeds per segment over time,
+on the same units and windows, would show whether speeds actually fell on the treated roads. Using such data
+for exposure would also need validated volume estimates and checks on sample coverage and representativeness.
 
 ## Reproduce
 
