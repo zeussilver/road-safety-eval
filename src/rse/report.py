@@ -192,6 +192,11 @@ def _map_panels(types: list[str]) -> str:
     rows = "".join(f'<div style="margin:3px 0">{line(TYPE_COLORS[ct])}Lowered {ct} km/h</div>' for ct in types)
     rows += (f'<div style="margin:3px 0">{dot(MUTED)}Injury crash, before the change</div>'
              f'<div style="margin:3px 0">{dot(RED)}Injury crash, after the change</div>')
+    # The Yarra layers start hidden; their colours are listed so comparison green is not read as 70/80.
+    rows += (f'<div style="margin-top:6px;border-top:1px solid {GRID};padding-top:5px">Yarra 30 km/h case study '
+             f'<span style="font-size:11px;color:{INK2}">(layers off by default)</span></div>'
+             f'<div style="margin:3px 0">{line(MAGENTA)}Trial streets, 30 km/h from May 2024</div>'
+             f'<div style="margin:3px 0">{line(GREEN)}Comparison streets, 9 nearby suburbs</div>')
     title = (f'<div style="{box}top:10px;left:56px;max-width:calc(100% - 400px);padding:8px 12px">'
              f'<div style="font-size:15px;font-weight:600">Victorian speed-limit reductions (first seen {first}–{last}) and injury crashes</div>'
              f'<div style="font-size:12px;color:{INK2};margin-top:2px">Crash dots are police-reported injury crashes on the lowered '
